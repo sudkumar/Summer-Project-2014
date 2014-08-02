@@ -1,0 +1,3 @@
+SFGDemo program is used to enroll fingerprint ID for the student and instructure.
+
+After that upload pyFingerPrint to arduino and you done.

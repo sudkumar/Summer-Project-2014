@@ -1,0 +1,7 @@
+put it anywhere in Raspberry and run at startup
+
+To run at startup edit your .bashrc file in your home folder and add this line at the end 
+python path_to_script/update.py &
+
+
+## here "&" is used to run program seperate 

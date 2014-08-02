@@ -1,0 +1,1 @@
+http://localhost/attendance/activate.php?email=godbhai@gmail.com&email_code=8e04d11092572f0c9a02b5e4dcb726a3

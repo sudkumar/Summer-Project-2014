@@ -1,0 +1,10 @@
+From command line or using phpmyadmin upload these datas to server.
+
+From command :
+$ mysql -u mysql_username -p < data.sql
+Enter your password : 
+
+
+From phpmyadmin:
+
+import data.rar file from import options

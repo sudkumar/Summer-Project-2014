@@ -1,0 +1,10 @@
+File Structure: 
+
+1. Directory arduino program, contains enroll sketch and finger_print identification sketches for arduino to upload.
+
+2. Directory attendance, contains files for our web interface for instructure.
+
+3. Directory python script, contains a python script which is used to update data to server while taking attendance through finger print.
+
+4. Directory sql script, contains a sql query script which creates basic structure for our database.
+

@@ -1,0 +1,5 @@
+Before uploading to main server some changes must be made.
+
+1. Go to file /core/database/connect.php and change hostname, username, password.
+2. Go to file /core/functions/user.php and uncomment all the email functions and remove all the file functions.
+3. Now you can remove all the text files.

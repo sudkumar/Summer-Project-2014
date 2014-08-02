@@ -1,0 +1,364 @@
+*{
+	margin: 0px;
+	padding: 0px
+}
+h1{
+	font: bold 20px  Arial;
+	text-shadow: rgba(110, 110, 110, .6) 2px 2px 3px;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+header, section, footer, aside, nav, article{
+	display: block;
+}
+body{
+	width: 100%;
+	/* for explorer >= 10 */
+	display: -ms-flexbox;
+	-ms-flex-pack:center;
+	/* for mozila */
+	display: -moz-box;
+	-moz-box-pack: center;
+	/* for safari, chrome, opera */
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	background: #C0C0C0;
+}
+#big_wraper{
+	max-width: 1100px;
+	margin: 20px 0px;
+	/* explorer >= 10*, this doesn't support orient property*/
+	-ms-flex: 1;
+	
+	/* for mozila */
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-moz-box-flex: 1;
+	
+	/* for chrome, safari */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+	
+}
+#top_header{
+	background: linear-gradient(180deg, #E0E0E0, #C0C0C0);
+	border-bottom: 1px solid rgba(110,110,110, .6);
+	padding: 20px;
+}
+#main_body, #top_header{
+	clear: both;
+	/* for mozila */
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	/* for chrome*/
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	
+	/* for explorere to make flexible and also make direction to row(horizontal)*/
+	display: -ms-flexbox;
+	-ms-flex: 1;
+	-ms-flex-direction: row;	
+}
+#heading{
+	-moz-box-flex: 1;
+	
+	/* for chrome, safari*/
+	-webkit-box-flex: 1;
+	
+	display: ms-flexbox;
+	-ms-flex:1;
+}
+#username{
+	width: 200px;
+}
+#username ul{
+	line-height: 30px;
+}
+#username  li{
+	display: inline-block; 
+	float: left;
+	list-style: none;
+	position: relative;
+}
+#username ul li:hover ul li a:hover{
+	background: #CCC;
+	color: black;
+}
+#username ul li a{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: white;
+	border: 1px solid #FFF;
+	text-shadow: 1px 1px 1px #000; 
+}
+
+#username ul ul{
+	position : absolute;
+	visibility: hidden;
+}
+#username ul li:hover ul{
+	visibility: visible;
+}
+#username ul li:hover ul li{
+	background: #606060;
+}
+#username a:hover {
+	color: black;
+}
+
+#darrow{
+	font: bold 25px "Comic Sans MS", cursive;
+	color: blue;
+	width: 40px;
+	text-align: center;
+	position: absolute;
+	top: -4px;
+	right: -35px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+#darrow:hover, #teachername {
+	cursor: pointer;
+}
+#top_menu{
+	background: linear-gradient(0deg, white, #C0C0C0);
+}
+body#home #navhome a, body#home #navAddDrop a, body#query #navattendance a, body#mail #navsendmail a, body#result #navqueryresult a{
+	background: linear-gradient(0deg, white, #331900);
+	color: black;
+	text-shadow: 2px 2px 1px white;
+}
+#top_menu ul{
+	line-height: 30px;
+}
+
+#top_menu  li{
+	display: inline-block; 
+	float: left;
+	list-style: none;
+	position: relative;
+}
+#top_menu li:hover{
+	background: linear-gradient(0deg, white, #606060);
+}
+#top_menu ul li a{
+	text-align: center;
+	font-family: Tahoma;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block; 
+	color: blue;
+}
+#top_menu a:hover {
+	color: black;
+	text-shadow: 2px 2px 1px white;
+}
+#main_section{
+	border: 1px solid #C0C0C0;
+	background: #E0E0E0;
+	/* for mozila */
+	-moz-box-flex: 1;
+	
+	/* for chrome, safari*/
+	-webkit-box-flex: 1;
+	
+	display: ms-flexbox;
+	-ms-flex:1;
+	
+	margin: 20px 20px 20px 0px;
+	padding: 20px;
+	
+	border-top : 3px solid #808080;
+	border-bottom: 3px solid #808080;
+	border-radius: 10px;
+}
+article{
+	border: 1px solid white;
+	padding: 20px; 
+	margin: 10px 0px;
+	line-height:  1.5;
+	border-radius: 5px;
+	box-shadow: rgb(128, 128, 128) 0px 5px 0px ;
+}
+article footer{
+	text-align: right;
+	font: italic 14px "Comic Sans MS", cursive;
+}
+q{
+	color: black;
+	font-size:  15px;
+	font-family: sans-serif;
+}
+q:before{
+	content: open-quote;
+	padding: 3px;
+	font-weight: bold;
+}
+q:after{
+	content: close:quote;
+	padding: 3px;
+	font-weight: bold;
+}
+
+
+#put_side{
+	position:relative;
+	border: 1px solid #c0c0c0;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+	background: #E0E0E0;
+	border-top : 3px solid #808080;
+	border-bottom: 3px solid #808080;
+	border-radius: 10px;
+	text-align: center;
+}
+#the_footer{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+}
+body#query input, body#home .course_no, body#home #drop_course_no{
+	font: bold 15px "Comic Sans MS", cursive;
+	margin: 10px 0px;
+	width: 250px;
+	height: 35px;
+	border: 2px solid #808080;
+    border-radius: 7px;
+    padding-left: 5px;
+}
+body#home #file{
+	font: bold 15px "Comic Sans MS", cursive;
+	margin: 10px 0px;
+	width: 250px;
+	height: 35px;
+    border-radius: 7px;
+    padding-left: 5px;
+}
+body#query input:focus, body#mail #mailsubject:focus, body#mail #mailbody:focus, body#home #course_no:focus{
+	outline: none;
+    border-color: #606060;
+    box-shadow: 0 0 10px #9ecaed;
+}
+body#query #submit{
+	width: 100px;
+}
+body#mail #mailsubject, body#mail #mailbody{
+	font: bold 17px arial;
+	letter-spacing: 1.2px;
+	margin: 10px 0px;
+	padding: 5px;
+	width: 600px;
+	height: 35px;
+	border: 2px solid #808080;
+    border-radius: 7px;
+	
+}
+body#mail #mailsubject{
+	height: 35px;
+}
+body#mail #mailbody{
+	height: 200px;
+}
+body#mail #submit{
+	width: 100px;
+	border: 2px solid #808080;
+	border-radius: 5px;
+	font: bold 17px arial;
+}
+ body#home #submit{
+ 	width: 150px;
+	border: 2px solid #808080;
+	border-radius: 5px;
+	font: bold 17px arial;
+	margin-left: 8px;
+ }
+li{
+	list-style:none;
+	display: block;
+}
+#query_top_link{
+	margin-bottom:10px;
+}
+#download{
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: white 2px 2px 2px inset;
+	background: #606060;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	padding: 7px;
+	color: white;
+	position: relative;
+	right: 20px;
+}
+ 
+#student_data
+{
+	clear:both;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin:auto;
+	width: 100%px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#student_data th
+{
+	font-size: 15px;
+	font-weight: normal;
+	padding: 8px;
+	background: #a0a0a0;
+	border-top: 4px solid #606060;
+	border-bottom: 1px solid #808080;
+	color: white;
+	width: 100px;
+}
+#student_data td
+{
+	padding: 8px;
+	font-size: 15px;
+	background: #e0e0e0;
+	color: #606060;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+}
+#student_data  tr table tr:hover td
+{
+	background: #a0a0a0;
+	color: black;
+}
+#scrollit table{
+	border-collapse: collapse;
+}
+#scrollit td{
+	width: 100px;
+}
+#scrollit{
+    overflow:scroll;
+    height:250px;
+}
+u{
+	color: blue;
+}
+span[id^="fillme"]:hover{
+	cursor: pointer;
+}
+#mailDiv{
+	margin: auto;
+	padding: 10px;
+}
+#drop{
+	margin-left: 200px;
+}
+#DROP{
+	margin-left: 290px;
+}
